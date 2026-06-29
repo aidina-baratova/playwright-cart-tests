@@ -4,7 +4,7 @@ Automated end-to-end cart tests for [saucedemo.com](https://www.saucedemo.com) b
 
 ## What This Tests
 
-- Showcasing an accurate number of items added to the cart 
+- Add an item to the cart and verify the cart badge shows 1
 - Removal of an item and verifying that a badge disappears
 - Verify that the correct item name appears in the cart
 
@@ -26,7 +26,7 @@ npm install
 Run tests on Chromium:
 
 ```bash
-npx playwright cart tests/cart.test.js --project=chromium
+npx playwright test tests/cart.test.js --project=chromium
 ```
 
 View HTML report:
